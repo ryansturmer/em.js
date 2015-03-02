@@ -8,7 +8,7 @@ Stop me if you've heard this one.  There is __actually no way__ to determine the
 
 How to use
 ----------
-em.js is just a shim that replaces the `measureText` method on the HTML5 canvas 2D drawing context with one that actually implements some of the proposed metrics.  To use it, simply include em.js in your web project before you make any calls to `measureText`
+em.js is just a shim that replaces the `measureText` method on the HTML5 canvas 2D drawing context with one that actually implements some of the proposed metrics.  To use it, simply include em.js in your web project before you make any calls to `measureText.`  You can then [use measureText as you would normally](http://www.w3schools.com/tags/canvas_measuretext.asp) but get more of the promised metrics from the standard.  As always, your mileage may vary.
 
 References
 ----------
