@@ -4,7 +4,7 @@ Javascript shim that fills in as-yet unimplemented text measurement functionalit
 
 What's this about
 -----------------
-Stop me if you've heard this one.  There is __actually no way__ to determine the height of rendered text in the HTML5 canvas API.  The proposed behavior of the [TextMetrics:https://developer.mozilla.org/en-US/docs/Web/API/TextMetrics] API looks promising, but at the time of this writing is almost completely unsupported in almost every browser.
+Stop me if you've heard this one.  There is __actually no way__ to determine the height of rendered text in the HTML5 canvas API.  The proposed behavior of the [TextMetrics](https://developer.mozilla.org/en-US/docs/Web/API/TextMetrics) API looks promising, but at the time of this writing is almost completely unsupported in almost every browser.
 
 How to use
 ----------
@@ -12,7 +12,7 @@ em.js is just a shim that replaces the `measureText` method on the HTML5 canvas 
 
 References
 ----------
-This was mainly inspired by [this answer:http://stackoverflow.com/questions/1134586/how-can-you-find-the-height-of-text-on-an-html-canvas/9847841#9847841] on stack overflow, which details a method of essentially setting up tht text and rendering it, and using CSS to determine the various text metrics.
+This was mainly inspired by [this answer](http://stackoverflow.com/questions/1134586/how-can-you-find-the-height-of-text-on-an-html-canvas/9847841#9847841) on stack overflow, which details a method of essentially setting up tht text and rendering it, and using CSS to determine the various text metrics.
 
  * https://developer.mozilla.org/en-US/docs/Web/API/TextMetrics
  * https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D
