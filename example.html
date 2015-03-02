@@ -1,0 +1,30 @@
+
+<!doctype html>
+<html>
+	<head>
+	<title>em.js Example</title>
+	</head>
+	<body>
+		<canvas id="canvas" width="600" height="300" style="border:1px solid black;">
+			You have no HTML5 canvas support.
+		</canvas>
+		<p style="font-weight: bold;">
+			Below is the output of the CanvasRenderingContext2D.measureText function which provides information about rendered text:
+		</p>
+		<p id="output"></p>
+	<script src="em.js" type="text/javascript"></script>
+	<script language="javascript">
+		document.addEventListener("DOMContentLoaded", function(event) { 
+			var text = "Hello"
+			var font = "50px Georgia";
+			var canvas = document.getElementById('canvas');
+			var cx = canvas.getContext("2d");
+			cx.font = font;
+			metrics = cx.measureText(text);
+			cx.fillStyle = "#000000"
+			cx.fillText(text,0,metrics.actualBoundingBoxAscent);
+			document.getElementById('output').innerHTML = JSON.stringify(metrics);
+		});
+	</script>
+	</body>
+</html>
