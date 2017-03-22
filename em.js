@@ -4,7 +4,7 @@ CanvasRenderingContext2D.prototype._measureText = CanvasRenderingContext2D.proto
 // This was inspired by StackOverflow answer:
 // http://stackoverflow.com/questions/11452022/measure-text-height-on-an-html5-canvas-element
 CanvasRenderingContext2D.prototype.measureText = function(text) {
-	metrics = this._measureText(text);
+	var metrics = this._measureText(text);
 
 	var textSpan = document.createElement('span');
 	textSpan.innerHTML = text;
